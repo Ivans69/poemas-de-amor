@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Poemas de Amor</h1>
+        <p>Elige cómo te sientes y recibe un poema personalizado</p>
+    </header>
+    <section id="emotion-form">
+        <label for="mood">¿Cómo te sientes?</label>
+        <select id="mood">
+            <option value="feliz">Feliz</option>
+            <option value="triste">Triste</option>
+            <option value="enamorada">Enamorada</option>
+        </select>
+        <button id="generate-poem">Generar poema</button>
+    </section>
+    <section id="poem-section">
+        <h2>Tu poema:</h2>
+        <p id="poem"></p>
+    </section>
+    <audio id="bg-music" loop>
+        <source src="your-music-file.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
